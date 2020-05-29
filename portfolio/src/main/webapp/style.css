@@ -48,7 +48,7 @@ body {
 }
 
 #profile-picture {
-  background-color: white;
+  background-image: url("/images/profile_pic_large.jpg");
   height: 300px;
   width: 300px;
 }
