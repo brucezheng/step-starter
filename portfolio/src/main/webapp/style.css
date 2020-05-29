@@ -2,18 +2,31 @@ body {
   background-color: #097138;
   height: 100vh;
   overflow: hidden;
+  margin: 0;
 }
 
 .page-container {
+  height: 100vh;
+}
+
+.page-inner {
   /* display */
   display: flex;
   height: 100vh;
+  margin: 0 auto;
+  max-width: 800px;
   /* flex */
-  align-items: center;
   align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  /* display */
+  display: flex;
+  /* flex */
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .content-block {
@@ -24,6 +37,14 @@ body {
   background-color: blue;
   height: 300px;
   width: 450px;
+}
+
+#page-header {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50pt;
+  font-weight: 300;
+  margin: 12px 12px 0 8px; /* Margin left smaller to align 'B' with profile picture. */
 }
 
 #profile-picture {
@@ -38,11 +59,11 @@ body {
     overflow: unset;
   }
 
-  .content-block {
-    margin: 36px 36px 0;
+  .content-block:first-of-type {
+    margin: 18px 36px 0;
   }
 
-  .content-block:last-of-type {
+  .content-block {
     margin: 36px;
   }
 
@@ -50,9 +71,17 @@ body {
     height: unset;
   }
 
+  .page-inner {
+    height: unset;
+  }
+
   .tab {
     height: 500px;
     width: calc(100vw - 72px);
+  }
+
+  #page-header {
+    margin: 36px 36px 0;
   }
 
   #profile-picture {
