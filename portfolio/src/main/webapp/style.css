@@ -1,9 +1,62 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+body {
+  background-color: #097138;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.page-container {
+  /* display */
+  display: flex;
+  height: 100vh;
+  /* flex */
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-block {
+  margin: 12px;
+}
+
+.tab {
+  background-color: blue;
+  height: 300px;
+  width: 450px;
+}
+
+#profile-picture {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 815px) {
+  body {
+    height: unset;
+    overflow: unset;
+  }
+
+  .content-block {
+    margin: 36px 36px 0;
+  }
+
+  .content-block:last-of-type {
+    margin: 36px;
+  }
+
+  .page-container {
+    height: unset;
+  }
+
+  .tab {
+    height: 500px;
+    width: calc(100vw - 72px);
+  }
+
+  #profile-picture {
+    height: calc(100vw - 72px);
+    width: calc(100vw - 72px);
+  }
 }
