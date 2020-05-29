@@ -1,13 +1,11 @@
 # Google Student Training in Engineering Program
 
-This repo contains the projects you'll work on for the first half of STEP.
+This repo contains **Bruce Zheng's** portfolio and STEP projects.
+
+**STEP** is Google's STEP (Student Training in Engineering Program, formerly known as Eng Practicum 
+in NA) is an internship for first and second-year undergraduate students with a passion 
+for computer science. I (Bruce) was a host for the STEP program in 2020. I created this repo so that I
+could follow along with the introductory material they needed to follow for the first half of the 
+internship.
+
 This work is based on the [Google Software Product Sprint](https://g.co/softwareproductsprint) program.
-
-To get started:
-
-- Login to [Google Cloud Shell](https://ssh.cloud.google.com/cloudshell/editor)
-- Clone this repo: `cd; git clone https://github.com/googleinterns/step.git`
-- Open the GitHub setup walkthrough: `teachme ~/step/walkthroughs/week-1-setup/github-setup-walkthrough.md`
-  - If the tutorial panel does not open or display the walkthrough contents, try refreshing the page.
-
-Then follow the on-screen instructions to set up your repo.
