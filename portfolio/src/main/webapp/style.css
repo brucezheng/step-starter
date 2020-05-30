@@ -1,5 +1,5 @@
 body {
-  background-color: #097138;
+  background-color: #9AA0A6;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -21,7 +21,23 @@ body {
   justify-content: center;
 }
 
-.content-container {
+#page-top-content {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 12px 12px 0 8px; /* Margin left smaller to align 'B' with profile picture. */
+}
+
+#page-header {
+  font-size: 50pt;
+  font-weight: 300;
+}
+
+#page-subheader {
+  font-size: 24pt;
+  font-weight: 200;
+}
+
+#content-container {
   /* display */
   display: flex;
   /* flex */
@@ -39,16 +55,10 @@ body {
   width: 450px;
 }
 
-#page-header {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 50pt;
-  font-weight: 300;
-  margin: 12px 12px 0 8px; /* Margin left smaller to align 'B' with profile picture. */
-}
-
 #profile-picture {
   background-image: url("/images/profile_pic_large.jpg");
+  background-size: 110% auto;
+  background-position: 100% center;
   height: 300px;
   width: 300px;
 }
@@ -80,8 +90,12 @@ body {
     width: calc(100vw - 72px);
   }
 
-  #page-header {
-    margin: 36px 36px 0;
+  #page-top-content {
+    margin: 18px 36px 0;
+  }
+
+  #page-subheader {
+    display: none;
   }
 
   #profile-picture {
